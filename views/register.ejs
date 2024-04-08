@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jayanta Debnath - NagaEd Test 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#000",
+            },
+            fontFamily: {
+              sans: ["Urbanist", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center w-full h-screen flex-col gap-10"
+    >
+      <h1 class="text-3xl">Register end point guide using Postman</h1>
+      <ul class="flex flex-col gap-3">
+        <li>
+          Copy the url :
+          <span class="text-blue-500">http://localhost:3000/register</span>
+        </li>
+        <li>Open Postman.</li>
+        <li>
+          Click on the "+" icon or new in the top left corner to create a new
+          request.
+        </li>
+        <li>Choose the HTTP method as POST.</li>
+        <li>Enter the URL of your API endpoint.</li>
+        <li>Select the "Body" tab.</li>
+        <li>Choose the "raw" option.</li>
+        <li>
+          Enter your JSON data containing username, password, and address in the
+          body.
+        </li>
+        <li>For example:</li>
+        <li >
+          { "username": "example_user", "password": "password123", "address":
+          "123 Example St" }
+        </li>
+      </ul>
+
+
+      <a href="/users" class="px-10 py-5 bg-violet-600 text-white rounded-lg">Check Registered Users</a>
+    </div>
+  </body>
+</html>
